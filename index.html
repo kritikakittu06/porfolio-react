@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kritika Chaudhary - Portfolio</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    function App() {
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        alert('Message sent! (Simulated)');
+      };
+
+      return (
+        <div className="font-sans text-gray-100 bg-gradient-to-br from-gray-900 via-blue-950 to-teal-900 min-h-screen overflow-x-hidden relative">
+          {/* Navigation */}
+          <nav className="flex justify-between items-center py-6 px-4 sm:px-8 lg:px-16">
+            <div className="text-2xl font-bold text-cyan-400">Portfolio</div>
+            <div className="space-x-4 sm:space-x-8">
+              <a href="#home" className="text-gray-300 hover:text-cyan-400">Home</a>
+              <a href="#about" className="text-gray-300 hover:text-cyan-400">About</a>
+              <a href="#portfolio" className="text-gray-300 hover:text-cyan-400">Portfolio</a>
+              <a href="#contact" className="text-gray-300 hover:text-cyan-400">Contact</a>
+            </div>
+          </nav>
+
+          {/* Hero Section */}
+          <section className="relative z-10 py-16 px-4 sm:px-8 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
+            <div className="lg:w-1/2 text-center lg:text-left">
+              <h1 className="text-3xl sm:text-5xl font-bold text-gray-100 mb-2">
+                Hello, It's Me
+              </h1>
+              <h2 className="text-4xl sm:text-6xl font-bold text-cyan-400 mb-4">
+                Kritika Chaudhary
+              </h2>
+              <p className="text-xl sm:text-2xl text-gray-300 mb-6">
+                And I'm a <span className="text-cyan-400">Full stack developer</span>
+              </p>
+              <p className="text-gray-400 mb-6 max-w-md mx-auto lg:mx-0">
+                Working in the field of web development, I create dynamic and responsive websites that provide an engaging user experience. My expertise includes both front-end and back-end technologies, allowing me to build complete web solutions from scratch.
+                I am passionate about coding and always eager to learn new technologies to enhance my skills. Whether it's developing a new feature or optimizing existing code, I strive for excellence in every project I undertake.
+                I believe in the power of collaboration and enjoy working with teams to bring innovative ideas to life. Let's connect and create something amazing together!
+              </p>
+              <div className="flex justify-center lg:justify-start space-x-4 mb-6">
+                <a href="#" className="text-gray-300 hover:text-cyan-400"><i className="fab fa-facebook-f"></i></a>
+                <a href="#" className="text-gray-300 hover:text-cyan-400"><i className="fab fa-twitter"></i></a>
+                <a href="#" className="text-gray-300 hover:text-cyan-400"><i className="fab fa-linkedin-in"></i></a>
+              </div>
+              <a
+                href="#"
+                className="inline-block bg-cyan-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-cyan-500 transition-transform transform hover:scale-105"
+              >
+                Download CV
+              </a>
+            </div>
+            <div className="lg:w-1/2 mt-8 lg:mt-0">
+              <div className="relative mx-auto w-64 h-64 sm:w-80 sm:h-80">
+                <div
+                  className="absolute inset-0 bg-cyan-400 opacity-30 blur-md"
+                  style={{
+                    clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
+                  }}
+                ></div>
+                <div
+                  className="absolute inset-4 bg-gray-800"
+                  style={{
+                    clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
+                    backgroundImage: 'url(https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2000&auto=format&fit=crop)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                ></div>
+              </div>
+            </div>
+          </section>
+
+          {/* Services Section */}
+          <section className="relative z-10 py-16 px-4 sm:px-8 lg:px-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-8">Our Services</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+                <h3 className="text-xl font-semibold text-cyan-400 mb-2">Web Development</h3>
+                <p className="text-gray-300 mb-4">
+                  web development services to create dynamic and responsive websites that engage users and drive results.
+                </p>
+                <a href="#" className="text-cyan-400 hover:underline">Read More</a>
+              </div>
+              <div className="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+                <h3 className="text-xl font-semibold text-cyan-400 mb-2">Graphic Design</h3>
+                <p className="text-gray-300 mb-4">
+                  Graphic design services to create visually stunning graphics that capture attention and communicate effectively.
+                </p>
+                <a href="#" className="text-cyan-400 hover:underline">Read More</a>
+              </div>
+              <div className="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+                <h3 className="text-xl font-semibold text-cyan-400 mb-2">Digital Marketing</h3>
+                <p className="text-gray-300 mb-4">
+                  Digital marketing services to enhance your online presence and reach your target audience effectively.
+                </p>
+                <a href="#" className="text-cyan-400 hover:underline">Read More</a>
+              </div>
+            </div>
+          </section>
+
+          {/* Projects Section */}
+          <section className="relative z-10 py-16 px-4 sm:px-8 lg:px-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-8">Latest Project</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-gray-800/50 p-4 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+                <div
+                  className="w-full h-48 bg-gray-700 rounded-lg"
+                  style={{
+                    backgroundImage: 'url(https://freebiesbug.com/wp-content/uploads/2023/11/ecommerce-design-580x435.jpg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                ></div>
+              </div>
+              <div className="bg-gray-800/50 p-4 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+                <div
+                  className="w-full h-48 bg-gray-700 rounded-lg"
+                  style={{
+                    backgroundImage: 'url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBUQEBEWFRUVEhUVGBcXExUVFhYYFRUXFhUXGBcYHSggGBolHRYYITIhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGzYmHiUvLTAvLTUrLi8tKy8tLi4vLS0vLS0tLy0tLS0tLS0vLTUtLS0tLS0tLS0tLS0tKy0tLf/AABEIAKgBKwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAwQFBgcBAgj/xABLEAACAQIDAwYICwcBBwUAAAABAhEAAwQSIQUxQQYTIlFh0QcVMlJxgaKxFCMzNFNygpGSobIXQlRzs8HwQxYkNWKT4fFEY5TS0//EABoBAQACAwEAAAAAAAAAAAAAAAABAgMEBQb/xAAxEQACAQMCAwYFAwUAAAAAAAAAAQIDBBESITFBUQUTFDJxkSIzYYGhFULRIzSxweH/2gAMAwEAAhEDEQA/ANUNeTXo15NAeGpF6VekXoBF6MLY5y4qTEn8hqa49L7H+XT7X6TQEyNi2PNP4m76PE2H8z2m76kKb4qy7RkuFI3wFM+nMP8AJoBv4lw/me03fR4lw/me03fTprTFMuc5oAzQJkcYGlILhboIPPsRMxkt6iZiQOrSgPHiXD+Z7Td9HiXD+Z7Td9OcTadoy3CkdQUz99IHCXtf94bd5lvTt3f5FAefEuH8z2m76Z7Rs4HDgG8QgYkCWfUgSYA7KljabJlznNEZ4Ez1xun1RTO7slbmUXyLyqSQr27ZEwRPkzuNWjpz8XAmOM78BHA4LB30Fy1DoZghmjQkEb94II9VOPEuH8z2m769DAFcosvzSKAMiImXeSdCNJnhT6oeM7EEf4lw/me03fSN/Z2FQgMjS0xHOMdBJ8mYqWprisJndXBEqGGq5h0ipneIPR/OoA3bZGGAkrH2246DjXrxLh/M9pu+mzbCmZukknNJUHpadIdRlQdI7Z0jljZhtXAemwGUaRqSQZInQKVLaadPQbwQHXiXD+Z7Td9HiXD+Z7Td9SFFAR/iXD+Z7Td9HiXD+Z7Td9SFFARx2Nh/M9pu+jxPh/MP4m76d4gSCJKypGYbwTxpsLbBVC3wCM0kgNMmR5RnTdvoDx4mseYfxN31w7HseYfvbvp5hzlENcDGd/RHqgUpzq+cPvFARp2PZ+jP3t30zxNrB2rlu0/Re7ORSX6URPYN438SBU491fOG8cR11HDCJmLOwuNmLISATbnQ5TrlEQNI3dtWjjO5aLWd0cGyrPme03fTDamBW2AybiYjf933VOVHbc+TH1x7jRlmlgiEpdKbpThKqYxdaVFJLSooD1RXBXaADXk16NeTQCb0i9LNSD0Ag9ONj/Lp9r9Jpu9ONj/Lp9r9JoC00lcu9VerrQKY4i4ywVTNrqAQDEHUTof+9SkXiubFy566A566ZDFXDPxLCACJZYJJgjQ8Br2wa4MXd/h23+cm7799W2LbEpbuTSlR1i6xOqFfSQfcd/fT9DImqtFJLB6oooqCoUUUUAUUUUAUUUUAUUUUAUVyaSxeJS0jXHMKqlieoDf6aAWrzlHVWb7U8IeIa5zeDw8mJCkZrjdWkwvrntIruz+WuKchMQhtP5pUK0jfrJB9GhrH3kcl+7ljKRo5UdVeSg6qgMHtW7oScw7RB+8VOYe+LgkesdVbEqbis8jBTqqTxwfQCg6q5lFKkV5IqhnTE4qN258mPrj3GpSKjNvD4sfXHuNSyW9iGSl0pBKXSqmMXSlRSSUqKA9Cu1wV2gA15NejXk0Am1IPS7Ug9AIPTjY/y6fa/SabvTjY/wAun2v0mgLHiOFQ239u2cEiPeDkXLq2VyLmOd5yDfpMHWpu8siqT4S9m38Rh8Oli09wpjrF1ghVWVLeYswLMNdRHaRVlwMiexNbL27ZxF67h1DresZDctuuUgXBKEESrAgcCad7RxyYe3zlzNllR0Ue4ZZgo6KAneRw0rNdp8nMcV2kMHZvW7d+1aZOcvA4i7iEdczLczl8nNgjK7bzoBJpxt7Z20bvjF7VrEDnmwDWBzoUxbKjEADnITTNKmJnrqcjUy97L2xbxNy/aQOGw90WnzAAFiocFdTIgjUxSOzeVmGulkAugpjGwZm0x+NVVc+ROVOl5TQNDw1qm4rZGOOIxDrZuczc2pYvXEVlVr2HWzkaIaSA6glNCRGh3Ung9gY60wNvD3kU8oBiiBcHzRraqS0PqAVHR1IjQVDZWTNXmu1luydi4+0MK+S+rrjsWbrvdL5cPcFzms+ZzmQFkaNYIY75NNeSbOMbssXbks1nGZ7ovC+uMuaMrqVYtAGZgzhYHRHAVUqa07hRJIAHEmBQjhhIIIPEaiqZy8vKmIwjYlS2DVnN0ZSyZ8vxedRv1iB6a98hHtG9iDg8/wAEOQpmBVRdJY3BbB3LGX11XVvg3Ha/0e9z9eG3HGM9eeOhcqK5XasaYUUUUAUGuE1nm3PCCxuNawYGVTBusJzEb8g3R2nf1RqcVWtGksyNq1s6tzLTTXDj0ReMJhCjs5ctm69YA3D/ADrpHlFZz4a4vYD6lYMfdVGwHKrGTLXQ3YUWPyANW/C7UGKsXFjK/NtI3jVSJHWK1aF5RqPu47P6mW6sa1v8U9/QyfkByky43FKLRY5bl0kL0glkQqjXWdCBxzdglrtzlQuPtLjEUq9q6iXIUBemxyZGDEtAWZIBGYdlI7D2hYwd+5hcUy25uc4Ha0twMRIA1BgiSQepqQ5Ybew9xRh8JahGvKzPlyKSDJIUASdKyvoRHGnVk1Tk7iRdtrr0soJ9NWLBDKw7dDWcchryPca9LhUgAhGKDrDMBA06+Bmr7jdpizZ563aa9HC3Ex1nXd6JrYtqjcND+xq1rVyqpw4sniK8kVQcP4TreaLuGZVnerhz6wQtXbZm0bWJti7ZcOp4jh1gjeD2Gssqco8UZ7iyuLdJ1Y4T58vdHjamOt4e0166YRBJMTu9FQl7bFrF4ZLtkyjNoToZWQQQdasWLwqXUNu4oZWEEESCDULtPZ1qxZRLShFVoCjRRMk6DjWB69W3A18rT9SNSl0pBKXSshQXSlRSSUqKA9Cu1wV2gA15NejXk0Am1IPS7Ug9AIPTjY/y6fa/SabvTjY/y6fa/SaAtNRu18YuHTnCrMCwWFA0kEyzMQqLp5TEDcJkipKoblLyeTHCzmuMhsX1voQEYFlBAzI4IYa+kGCKEp4ObE2vZxtkX7DFkLMuoIIZCVZSOsEejqqsck+V+a2q4xnLXMdiMNbum0qWyyXGFu3KgDNlGhiCdJmatXJnYKYG09pLjuHvXL0vlkG6czDoqBEyd3GovD8hrCss3bjWkxj4xLJy5VvPO9gMzKCzMFPE6kiBU5J1M82+W+D0Kc44e3fuWmVBlvLhvlubk8OtoBjQmm2zuXLXPFynDOGx1tnMAZQEthmKEtJEsp1/dJO/SnOxeQeHwiPatXGFtkuIBktZwlzN0WvZM9xVzHKGJjSZgV3C8iEt/AiMTenALcS0SLOqXERCjjJB6KDUQdTUFW8ji3y2wbuiKXYXDfFpxbLLeOGDG8LcdJoytrEMRAJpTkntLBYtTiMHYyKwU84cPzXOZhJho6cEEGJgimmw+Q1jBFhh7jKhz5V5uzmUPJyG7kzuiliQpPpkaVMcmtjLgcLawiOzraXKrPlzESSJygDjG6gKre23isPjcRgMUTdN9M+AItoA+8PbaEjMjFSSZGQFiOuWblLh8GrWbrtdbDWkbE3LdoZbQcSGdV3SAWyqCQupEa082rycTEY3C41rjq+E53IoyZW55cj5pBPkiNCIpptPkbavXMS4u3La4xETEKuUi4LYygqWBKEr0SRvHUdaDJ3GctsFbF9mZyMM9hbhVJE4kA2sp/eBDLr2irLVN2l4PbF44gLeu2kxIw2dEFuA2FCiyVLKSAAq6cYq3hSOP/egPdFec/XRnH+CgIDl/jGs7OvuhglVSQYjnHVCR2wxrGcBW6codm/C8Ldw50zoQCdYYaofUwBrANpi7ZY4UqVvFshB3rrBPoPA9WvVWhc2869WMI8/wem7Iv6FrZVZTe6efXbb8k/Z2vYt+VcGm+JMekjQeupjD7TckPZusuQZ2VbTOzKDqDBBM6dFfxVRsFaVsVasDyATImJCLP5kVa+dNlkvWFOe2+qLPxgjprE65lmPrDiKw17ShaV4qO76v+DlUe0K/aFNzkkl0XMj7exPhV9r11MwLFlBXJE6EZZ0jqk/lTblbsoi0hW0qhXCg5pPS09X/mr7ta3ZRglvRzLkTqBpv6t8VH38Kt5SraL7j11qVq9SnV3ZtxpQcPhRH8gMdcw1q5atsBmJJkSQ0QGBnSpGzjLuDm4rHmz5X7yj/n7COPCoHC2+auHLMDQmImAel7qfJjr/ADmVU6G4EmMxy5iVG9hqBoDuNZVc1m3GO6x7egShTg8pbj/amCtYhZI6XBxv9fWKQ5BYu5hMeMO3kXZRhOmYAlGH3R6GqFu3r6SuGwo1I11RROs6DLE/vKWB6+AsHI/Zdy5jbTMS3Nk3HaI3AxA4akADqrqdm98oSjPyY2z1N6lX1W1SE/Jpfvyx9zVqiuUfyS/XHuNStRXKP5Jfrj3Gs55UgUpdKQSl0oBdKVFJJSooD0K7XBXaADXk0lbxlpvJuIfQwpWpcWuKJaaE2pB6XakHqCBB6cbH+XT7X6TTd6cbH+XT7X6TQFpprj8XzQBygydZdVgRv6RE90nhBdV4u2VbylDekA++gI61tfMM3NkCCQS9vWN+maR/aD6wbWJAItEzppctSCdw8qNezqNPvgtvzF3EeSNx31xcHaBkW13g+SN40BoBodq74SQNJ5y2BPV5XYa543GkpvVz5duOiYyk5t56P4uyni4O0BHNpGn7o4bqDg7RABtpAmOiuk740oBi22IXNzZ3x8paMaAyYaAN/wCE16s7VLsVW2Wy5tVe22izEANOug3bz2U8XB2hutqJj90cN3vNereHRTKooO7RQKA8YW+7TmtMkRvKGd+7KT/hpxRRQBRRRQBRRRQDDbm1beEw74i6eiizHFjuVRPEkgeusBxGNOIvXMXdAN1iSTrpIgBZ4AaDsFbhyu2CmNshHGbI2cLnZVJgjXKRwJieusPxt5C7lAAgJygcANAfXv8AXW/Z6VFvmcrtOUlFR6neSaTee6wmALajJmMk5mI1BG8CR1Hqq7W8GiA3rzRABUaSMpkMeAI+7sG6s+5LbZW0LqK37+Y9uYCSD1Sv50bb5UtdIsidWUN1ZJ1B6tK8/cQlK5lJnorKUKdtFItmD2gSWuvJa40gsNco0Ufdr6zT74WTuGlRS3CxA4Aers/KnzMFXtrl1Pill8WdFbIsV/k9IKtfhspUxazAHjBLiY9VVblv8HtYY4ZnDXGVjbkZWZkdWELBKkFp0bcDu3VoOKYBnJ3BmJ+81DW+TOFvl8XfQG5kZFbVsqZZMKTHlNcPrr0js6NHHdrdo59WrLTuyseDG82Lw90X70tbuBR0MzEMoYMzZhMmRMSchkk1qGwksWhzdoGTqSYlo9HurOuQeCXB4Z89sC697oKDLBWgKs74lTv0EaxBq6cnjdNyboAJmANYEVnjhwwVc5SpaW9kWuorlH8kv1x7jUotRfKP5Jfrj3GsJpkClLpSCUulALpSopJKVFAehXa4K7QGbmupdZfJYj0Ej3Vw1w17JpPidgcrtS+u663rOb3zSg2/iBvYH0qP7RUeaTasE6FKXGK9ijpxfIlxykufvW1PoJHfUvyX22LuKtpkKk5uII0UnqFUxqmeRPz+19v+m1aNxZ0VCUkt0jDUow0t4NZqF5UcoreAtC46l2ZsqIN7Nv38B21NVXuWXJz4faVQ+R0bMrRImIII4juHoPIt+7dWPe+XmatHR3i7zy8yqHwqXJj4DrMRz7TJ3D5KvI8K1z+BH/yD/wDlSbeD/HmCcUuhkaHQ9ddHIHaER8KX7jXc09mfT3n/AAdGqrPHw495C9nwoXXmMBIUS0YgmB1/I1edg7Yt4ywt+3IDSCDvVgYIMdtUC3yAx4LEYlAXADHKdQNBV55NbEXBYZbCtMSSx4sTJMcPR1AVz7xWuH3WOKxhye2N85+vDBoVe7wtPElc4692/sryMQmYpmXMN6yJE7pFJix0mYIoZgAzDewWYB4mJMTuk0XcDaZg7IpYHMDGsiBM+ofdXNMAqt1SYDCeqR/nA17pquzbAbMLSAgyDlEz1/lTqgCiuE02GJZvk0LDzicqn0cT6Yg9dAOqKTslz5agehi3vApSgGu08Ib1m5aDlM6MmZd65hEisZ5Wck7mFt5OZLIzBc1uTmnQCYJBMxHbpW4VyKy0qrhk1Lm0jXabbTR887G8EOPxLh2IwlvrcFrmvVaBHtFTTm/yNtYK5etLmuFHiXjM0gQxiBBmRHCtq23tFrAQIFLXGygu2VBAkyf7VjnhY2srthcVLWzds3bfQcQTh7pG8kZlm4Sp7TWvdUKlSnqjtub9riljO6HuDwwtoMxk7yO3upO9dE5maAN1ZVf2pfb/ANU0cJcfmae7O2uF0v3WbUQQVbj9YEfnXNfZtRfE2bvjoP4cH0piMDcZm6BIJb1gk0lZw9y2vNDDMU6wwnWSdDv+/j2a2K/bLKQGKnrG8a0wKurQ2KGhBK5EGmmnXGn5muxUqSmklsabqalhoqmD2BiPhJum0UQagbyxKlRrOgUTpxLT1zYsFYZGDMjatl0ywoKk5mk+Tw0nWnCYa42i4omImFUndEz6if8AxUiyaa6mKiEnGGn8h1XjGD2u6ovlH8kv1x7jUotRfKP5Jfrj3GqmIgUpdKQSl0oBdKVFJJSooD0K7XBXaAzc1w101w17I7J4NJtShpNqqyok1TPIn5/a+3/TaoZqmeRPz+19v+m1a1z8qXozHU8rNZooorzBzAooppY2gj3XsicyAFtCB0t0Hjuqrkk0nzJSbHdFY/jdqYvC37eLbEXmdsUq3bZuzYNq5dW2ba2ogFQwAO+VknUitgpGWSZQceIUUUwvYy2jkMzSNSMrEaLPARu1qxUf0UyTalkkKGMkgDoPrJjzae0Axxt9Dct2CwDXMzZSdWS2BmgcQGZJ7D20+rkCu0AUUUUAUUUUAhi8JbvKUuorqd6soZT6QdKguU217GCS0GyJmuKqg2yy5QQGVYEAwdBvMGAYqyUk9meNG3jGS0Wk/i4FSvbdI5+LKdADJNonMc+RgAD0yG0gRJIFKptu2MRbttzUPhRcyLaLNnhmJDjTJCEAQSTx3CrN8H7fyo+D9v5VGGRldCM5O7WbE2BcYANMEAEDhoJJ3A9fCpUz1ChLUa0rUohiUnqFdkmlKKABUVyj+SX649xqVqK5R/JL9ce40BApS6UglLpQC6UqKSSlRQHoV2uCu0Bm5rhrtVPafKdw5WyFygxJEkxxHUK9ZWrworMjq1KkYLLLQ1JtVatbTx7gFbYIO7ogTO7ea5i9oY+0ua5bCiYkrI+8HStL9Vt28JlXUaWXF49CwtUzyJ+f2vt/02ql7H22brc3cADEaEbjHAjrq6cifn9r7f8ATaslSrGpQlKPRlXNTg2jWaa403NObMb5lM/V/wAwinVFecOcMbF64J5yW6stvLHYekZrztLEm3bzovSJA1HYTr91SFMNtrNlj1QfTB3evdWGvq7t6eJenjUsmd8odmtjLdwf69tluWn3RdVVdWA3Azpx476s/InlO2MRBctuGa1zgYhAsDKrKQDmDBid6jSo2y8sznczQDunQD36U48HmBcc5fYQpZ1STJIZg7ER5KyTpv8AyJ5ljVm6jT9fc37mMdGS7VH3yecMZvVcUDdvyk+n7qkKYXblouytZYkaluaJU+RuaNT0h+Fuquyc0SBaf39f/eTTtrsvO5+r5ZOuf+1PBhrY/wBNd8+SN/ZXPgtr6NfwigGmunl+jnV69/oiD66Vso4YSHjrNwEbuI4/4a9XrdpAPiZEnybeaPUBpXVxq6DJcHD5NoGsDhQDqah8VynwltihuSRocqswHrAinm2bhXD3WUwRacg9RymsmmK6FjZxr5cnwNihRU8tmkf7XYPz2/6b91cPK/BfSN/037qz27hbq2heKEWzENIgyYHGZmmLXa3o9mUJcG/dfwZo29OXBmnnllgvpG/6b91K4TlXg7rhFuwSYGZWUE8BJETWSvdpF7lS+yqWNmyztYG90Uy2JdL4ay7GS1m2SeslATT2uC1h4NBrAUUUVBAUUUUAVUvCT81T+cP0PVtqpeEr5qn84foeti1+dH1MlLzoz+1jLq+TccfaNPrO2sQv+pPpCn+1Ra0oteidKEuKXsdDRF8UT1nlJeG8IfUR/entrlT51r7m/sRVZWvYqjsaEuMSHQg+Rb7fKayd6uPUCPfTgcoMN55/A/dVKorC+y6L4Z9yjtYAay5jr661E1ljNB9dYe1f2/f/AEY7vkX/AAt6VW6ylRAYgjUAanQa/wB+ylOVOLjCPCMc4C7oCyRqwOo+7fFc51xZN1kysLZfKTMEKTGnDSoba/Ki1dsNbRGDOIOaIXr1B1PVoOvsrmfptjTWqE23x+/sYbvt+4quNO30yjwk+n5IbYR/3i36T+k1p/In5/a+3/Tasu2D85t+k/pNajyJ+f2vt/02retv7af3/wAGSj8qRrNRPKflBY2fhmxN8nKIAVdWdj5KKDxMH0AEnQVLVlXh+J+D4UcOfc+sJAP5n765UVlmqRV3w2YiTlwdsCdJuuxjtIUe6m9/wx4l9+EtR1Z3g1mdLWcJcdSyIzAEAkKTq24aceys2iJXLLftLwi3b9rmmw1oDMGEM2hknTq3keunGwPChiMGromHtsGbNqzCDEHd2AfdVEa0wVWIIV5yng0EgweOoP3VzIYmDG6Y0++pwsYDbbyah+2vFfwlr8b91H7asV/CWvxvWXUVGhDLNR/bXiv4S1+N+6j9teK/hLX43rLqlrWyVbBNi/jJV8kZRkJLLDZpkCGIiN8aiocYohywXv8AbXiv4S1+N+6j9tWK/g7P437qy6ip0InJqP7XMRif93bC2lF34skO5ID9GRPHWuAliFUSzEKB1kmAPvrONln4+3/MX3ir1z7KQysQwMggwQRuIPXXY7NWISwb1pnRLBoeL2SrbPXDK8urkKdYN0FmK9ik5lB7RWePc4HQ7j2Uq+3cXlCfCGyg5h5IM9eaJn11GvdJ1JkkySdSSd5J662balOnnU+O5e3p1IZ1i73aRe7SDXaRe7W0bRZMP4X8TYRbC4W0RaUWwS7yQgygn7q9/trxX8Ja/G9Zlij02+s3vpbZWG528luJBcZt/kjVzp2TxFeXlTTm1jmcZ5csGj/trxX8Ja/G9H7a8V/CWvxv3VQuUOAWxdAtzkK6SIMgnMD0m7ONRdVdNJ4wRJOLwzUf214r+EtfjernyB8I9raTmxctczfClgubOjgb8rQCGG8qRu3EwY+e6s3gzMbXwn81vztOD+XvqrgsEZPpiql4Svmqfzh+h6ttVLwlfNU/nD9D1a1+dH1M1LzozlaUWk1pRa9MjpCq17FeFr2KuiyO12uV2pJA1mWPwz2brI2hB0PWODDrFabSd6yreUob0gH31qXdr36W+GjBWo94ip4vlXnslBbh2UqTPREiCRx9XDrPGszWlnBWvok/AvdSbYK19Gn4F7q5/wClSX7vwaFDsunQTVPbJTuTWHZ76uB0Ukk8NQQB6da0zkT8/tfb/ptUKECiAAB1AQKm+RPz+19v+m1bHcdzbyjnOzNxU9FNo1isz8Nuzr2JtYVLCF2F24YBA0ygTLEDeRWmVR+U+FxVp81hg+rPFxSyjNwhSDpG+RXChnXFY25/Q0lRnVTjTa1cs8D58vWmRmRwVZSVYHQggwQe2aldhY3G2kcYWcrMuaApkrqAQd+73xxqP2hinvXrl24wZ3dmYjcSTrEcOrsrmGxRt7kQmZBZAxGkaE1nZi35lmO39rMZAIDDNAtIQQRrvBJBzSQZ1ioy+MXcsW8L8HXLaaVKoA8sDOZp1LCJnU5F6qYfD+HNWuP+kv8AnGksTic8dBFIJMogWZjfHo/M1XQnxRORYbKxH0Ta9n+dXq3UzNcIrtWICpqdopaFgLd5pk0VbYZStwFvKVTEhiYmQDPGahalLO07ygZcZcHRiJeB0csb+A0kaiBFGRhPiI2tjYlnNsWHzBWaCuXoqQGYTEgZhqOsUjewF5FzvadVicxQgeVlEncNfeOsUs+0b05/hNwspyqc7yVOrENOglV04z2Unf2lfuLluXrjL1NcZhwO4nspuSednn4639dffV2wWKuo5NrflM6BujpMg6Ruqj4M/GJ9Ye+rRh7iyc2UiD5TMBvHm6k9ldaw3pyN+08rJk7SxaqRzcDUn4gRwkno9g+7spFsfi0LMtvKDqQLXREKEMCNAQBMaGB2UyxFxIJ+KPYLt0z6J76Y/DkG+yp18+51kxv9A9XbW2qcX+1e3/TZx9B5jlxFwy1kiBHRtZRvPBRHXUXccgkHQgwRXt8en0IiZjPc6o87/PRTF7kkndrWaCa2wWRH3vKb6x99O9kbROHcuEDSIOsGJkwfVTO5vPpNPtlbTv2AwtOqhiJDKjAwGG5gZEMdO2vOSk4zbXU5GWpZR52jtE3tMvEnfJ7aYVMjbOJZrYD2lKuHVglm2FYayWAH3HfAFeU5RYgCPijod+Hs8Z18nUieOmg0I0qjk28siUnJ5ZEVZvBp/wAXwn80/wBN6hdobRuXyDcKkiYyoiaGNOiBI0Hoqa8Gn/F8J/NP9N6q+BU+maqXhJ+ap/OH6Hq21UvCT81T+cv6Hpa/Oj6mel50ZytKrSQpVa9Mjpii17FeBXsVdEo9UUUVIA1w0UUB5NJtXKKhgTanexMf8GxFu8RIUmRxIIKmO2DRRWGcVJOL5lGsrBpCcsMARPPx2FHn9NUPwt7UGMs2UwV0sQ784FLJKlYhpjMJ4a0UVz12dTTzlmv4aPUyzxHifo/aXvo8R4n6P2l76KKt4KHVkeFj1DxHifo/aXvo8R4n6P2l76KKeCh1Y8LHqHiPE/R+0vfR4jxP0ftL30UU8FDqx4WPUPEeJ+j9pe+jxHifo/aXvoop4KHVjwseoeI8T9H7S99HiPE/R+0vfRRTwUOrHhY9T3Y2LiAyk29xB8pev01Jtgb3mfmvfRRW1QpqimomalBU1hCTbPv+Z+a99JnZl/zPaXvoorPrZk1HnxVf8z2l76PFV/zPaXvooprY1DV9iYiT8Xx85e+ueI8T9H7S99FFc92UG85Zqu2i9w8R4n6P2l76PEeJ+j9pe+iio8FDqx4WPUPEeJ+j9pe+pzkNgrmH2jhr95cttLhLNIMDIw3AzvIoop4GHVjwsepuv+12A+nH4H/+tVTlvyis4lUs2CWCtnLQQJAIAAOvE6+iiippWFOnJSTexeNCMXkqi0otdoroIzii16Fdoq6LI7RRRUg//9k=)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                ></div>
+              </div>
+              <div className="bg-gray-800/50 p-4 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+                <div
+                  className="w-full h-48 bg-gray-700 rounded-lg"
+                  style={{
+                    backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI9SuU0ttFanltexLmajPLrj9Pp9xJCu4aZg&s)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                ></div>
+              </div>
+            </div>
+          </section>
+
+          {/* About Section */}
+          <section className="relative z-10 py-16 px-4 sm:px-8 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
+            <div className="lg:w-1/3 mb-8 lg:mb-0">
+              <div className="relative mx-auto w-48 h-48 sm:w-64 sm:h-64">
+                <div
+                  className="absolute inset-0 bg-cyan-400 opacity-30 blur-md"
+                  style={{
+                    clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
+                  }}
+                ></div>
+                <div
+                  className="absolute inset-4 bg-gray-800"
+                  style={{
+                    clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
+                    backgroundImage: 'url(https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2000&auto=format&fit=crop)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                ></div>
+              </div>
+            </div>
+            <div className="lg:w-2/3">
+              <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-4">About Me</h2>
+              <p className="text-gray-300 leading-relaxed mb-6">
+                Hi, I'm kritika chaudhary, a passionate web developer with a love for creating beautiful and functional websites. I specialize in front-end development, crafting responsive designs that provide an excellent user experience. When I'm not coding, you can find me exploring the latest tech trends or enjoying a good book.
+              </p>
+              <a
+                href="#"
+                className="inline-block bg-cyan-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-cyan-500 transition-transform transform hover:scale-105"
+              >
+                Read More
+              </a>
+            </div>
+          </section>
+
+          {/* Contact Section */}
+          <section className="relative z-10 py-16 px-4 sm:px-8 lg:px-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-8">Contact Me!</h2>
+            <div className="max-w-md mx-auto flex flex-col gap-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="p-3 rounded-lg bg-gray-800/50 text-gray-100 border border-gray-600 focus:border-cyan-400 focus:outline-none"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="p-3 rounded-lg bg-gray-800/50 text-gray-100 border border-gray-600 focus:border-cyan-400 focus:outline-none"
+                required
+              />
+              <textarea
+                placeholder="Your Message"
+                className="p-3 rounded-lg bg-gray-800/50 text-gray-100 border border-gray-600 focus:border-cyan-400 focus:outline-none min-h-[120px]"
+                required
+              ></textarea>
+              <button
+                onClick={handleSubmit}
+                className="bg-cyan-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-cyan-500 transition-transform transform hover:scale-105"
+              >
+                Send Message
+              </button>
+            </div>
+          </section>
+
+          {/* Footer */}
+          <footer className="relative z-10 py-8 px-4 bg-gray-900/80 text-center text-gray-400">
+            © 2025 Alex Doe. All rights reserved.
+          </footer>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+  </style>
+</body>
+</html>
